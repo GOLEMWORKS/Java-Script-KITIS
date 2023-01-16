@@ -11,10 +11,14 @@
         
         "use strict";
 
-        let arrNums = ["a", "b", "c", "d"]
-        alert(`
-                Всего элементов: ${arrNums.length}
-                Последний элемент: ${arrNums[arrNums.length - 1]}`);
+        let arrNums = ["a", "b", "c", "d"];
+        alert(`Изначальный: ${arrNums[0]} + ${arrNums[1]} + ${arrNums[2]} + ${arrNums[3]}`);
+
+        arrNums[0] = "Замена";
+        arrNums[1] += " Добавление";
+
+        alert(`Обработанный: ${arrNums[0]} + ${arrNums[1]} + ${arrNums[2]} + ${arrNums[3]}`);
+
 
     </script>
 </body>
