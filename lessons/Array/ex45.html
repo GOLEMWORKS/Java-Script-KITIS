@@ -7,18 +7,19 @@
     <title>Document</title>
 </head>
 <body>
-    <script type="text/javascript">
+    <script text="type/javascript">
         "use strict"
-        let arrNum = [];
+        let arr = [];
 
-        arrNum[0] = 12;
-        arrNum[2] = 33;
+        for (i = 0; i < 5; i++) 
+        {
+            arr.push(`${i}`);
+        }
 
-        alert(`${arrNum[0]} + ${arrNum[1]} + ${arrNum[2]}`);
+        let key1 = 1;
+        let key2 = 4;
 
-        arrNum[4] = 11223;
-
-        alert(`${arrNum[0]} + ${arrNum[1]} + ${arrNum[2]} + ${arrNum[3]} +  ${arrNum[4]}`);
+        alert(Number(arr[key1]) + Number(arr[key2]));
     </script>
 </body>
 </html>
