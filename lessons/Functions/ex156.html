@@ -35,12 +35,56 @@
             return Math.pow(num, 3);
         }
 
+        function dividerByTwo(num) {
+            let count = 0; 
+
+            while(true) {
+                num /= 2;
+                
+                if(num <= 10) {
+                    return count;
+                }
+
+                count ++;
+            }
+        }
+
+        function task(num1, num2) {
+            if(num1 > 0 && num2 >0){
+                return num1 * num2;
+            } else {
+                return num1-num2;
+            }
+        }
+
+        function isEvenDigit(num) {
+
+            let flag  = true;
+            let dgtArr = Array.from(String(num), Number);
+
+            for(let elem of dgtArr) {
+                if(elem % 2 == 0) {
+                    flag  = true;
+                    console.log(elem + ' чётный')
+                } else {
+                    flag = false;
+                    console.log(elem + ' не чётный')
+                }
+            }
+        }
+
         myNameIs();
         oneToHunSum();
         atThird(4, 3);
 
         let cubeN = cube(3);
         console.log(cubeN);
+
+        console.log(dividerByTwo(200002));
+
+        console.log(task(45,3))
+
+        isEvenDigit(24567);
 
     </script>
 </body>
