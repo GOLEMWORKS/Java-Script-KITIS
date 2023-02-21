@@ -77,6 +77,150 @@
             return a==b;
         }
 
+        function reverseString(string) {
+            string = string.split("").reverse().join();
+            return string;
+        }
+
+        function numName(num) {
+            if(num > 999){
+                console.log("ЯЧ такое не озвучу");
+            } else {
+
+                let first;
+                let second;
+                let third;
+
+                let dgtArr = Array.from(String(num), Number);
+
+                switch (dgtArr[0]) {
+                    case 1:
+                        first = "сто";
+                        break;
+
+                    case 2:
+                        first = "двести";
+                        break;
+
+                    case 3:
+                        first = "триста";
+                        break;
+                    
+                    case 4:
+                        first = "четыреста";
+                        break;
+
+                    case 5:
+                        first = "пятьсот";
+                        break;
+
+                    case 6:
+                        first = "шетьсот";
+                        break;
+
+                    case 7:
+                        first = "семьсот";
+                        break;
+
+                    case 8:
+                        first ="восемьсот";
+                        break;
+                    
+                    case 9:
+                        first ="девятьсот";
+                        break;
+                
+                    default:
+                        break;
+                }
+
+                switch (dgtArr[1]) {
+                    case 1:
+                        second = "десять";
+                        break;
+
+                    case 2:
+                        second = "двадцать";
+                        break;
+
+                    case 3:
+                        second = "тридцать";
+                        break;
+                    
+                    case 4:
+                        second = "сорок";
+                        break;
+
+                    case 5:
+                        second = "пятьдесят";
+                        break;
+
+                    case 6:
+                        second = "шетьдесят";
+                        break;
+
+                    case 7:
+                        second = "семьдесят";
+                        break;
+
+                    case 8:
+                        second ="восемьдесят";
+                        break;
+                    
+                    case 9:
+                        second ="девяноста";
+                        break;
+                
+                    default:
+                        break;
+                }
+
+                switch (dgtArr[2]) {
+                    case 1:
+                        third = "десять";
+                        break;
+
+                    case 2:
+                        third = "двадцать";
+                        break;
+
+                    case 3:
+                        third = "тридцать";
+                        break;
+                    
+                    case 4:
+                        third = "сорок";
+                        break;
+
+                    case 5:
+                        third = "пятьдесят";
+                        break;
+
+                    case 6:
+                        third = "шетьдесят";
+                        break;
+
+                    case 7:
+                        third = "семьдесят";
+                        break;
+
+                    case 8:
+                        third ="восемьдесят";
+                        break;
+                    
+                    case 9:
+                        third ="девяноста";
+                        break;
+                
+                    default:
+                        break;
+                }
+                
+                console.log(first + second + third);
+            }
+
+        }
+
         myNameIs();
         oneToHunSum();
         atThird(4, 3);
@@ -91,6 +235,10 @@
         isEvenDigit(24567);
 
         console.log(isEqual(12,21));
+
+        console.log(reverseString('ты лох'));
+
+        numName(999);
 
     </script>
 </body>
